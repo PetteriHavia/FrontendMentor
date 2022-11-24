@@ -1,0 +1,191 @@
+:root{
+    --d-magenda: hsl(300, 43%, 22%);
+    --s-pink: hsl(333, 80%, 67%);
+    --dg-magenda: hsl(303, 10%, 53%);
+    --lg-magenda: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: auto auto;
+}   
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section{
+    max-width: 1100px;
+    margin: 2rem;
+}
+
+.toprow-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section{
+    max-width: 42%;
+}
+
+.left-section h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--d-magenda);
+    margin-bottom: 1rem ;
+    line-height: 1;
+}
+
+.left-section p{
+    color: var(--d-magenda);
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--dg-magenda);
+}
+
+.star-column{
+    display: flex;
+    padding: 1rem 0rem 1rem 0rem;
+    margin:  0.5rem 0rem;
+    background-color: var(--lg-magenda);
+    color: var(--d-magenda);
+    font-weight: 700;
+    border-radius: 10px;
+    width:27rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.star-column:nth-child(2){
+    align-self: center;
+}
+
+.star-column:nth-child(3){
+    align-self: flex-end;
+}
+
+.star-img{
+    background-image: url(./images/icon-star.svg);
+    width: 6rem;
+    height: 1.5rem;
+    background-repeat: space;
+
+}
+
+.right-section{
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomrow-section{
+    display: flex;
+    margin-top: 4rem;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+
+.review-column{
+    background-color:var(--d-magenda);
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    color: var(--lg-magenda);
+}
+
+.review-column img{
+    max-width: 15%;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+h4{
+    margin-bottom: 5px;
+}
+
+.person-name p{
+    color: var(--s-pink);
+}
+
+.person-information{
+    display: flex;
+    align-items: center;
+    padding: 0rem 0rem 1.5rem 0rem;
+}
+
+.review-column:nth-child(2){
+    margin: 1rem 0rem;
+}
+
+.review-column:nth-child(3){
+    margin: 2rem 0rem;
+}
+
+
+@media screen and (max-width: 992px ){
+
+    .wrapper{
+        display: block;
+    }
+
+    .card-section{
+        max-width: 90%;
+        align-items: center;
+    }
+
+
+
+    .toprow-section{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .right-section{
+        max-width: 100%;
+    }
+
+    .left-section h1{
+        font-size: 2rem;
+    }
+
+    .left-section{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .star-column{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .bottomrow-section{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .review-column:nth-child(2){
+        margin: auto;
+    }
+    
+    .review-column:nth-child(3){
+        margin: auto;
+    }
+
+}

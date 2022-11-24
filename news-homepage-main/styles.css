@@ -1,0 +1,284 @@
+
+:root{
+    --s-orange: hsl(35, 77%, 62%);
+    --s-red: hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --g-blue: hsl(233, 8%, 79%);
+    --dg-blue: hsl(236, 13%, 42%);
+    --vd-gray: hsl(240, 100%, 5%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    margin: 0rem 1.5rem;
+}
+
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.navbar{
+    display: flex;
+    margin: 4rem auto 3rem;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.navbar img{
+    max-width: 100%;
+}
+
+.menubtn{
+    font-size: 2rem;
+    display: none;
+}
+
+.closebtn{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    padding-right: 1.5rem;
+    padding-top: 0.3rem;
+}
+
+
+.navigation-links a{
+   margin-left: 2.5rem;
+   text-decoration: none;
+   color: var(--vg-blue);
+}
+
+.side-nav{
+    min-width: 60%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--g-blue);
+    opacity: 0.9;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in;
+    display: none;
+    padding-left: 1.5rem;
+    z-index: 2;
+}
+
+.side-nav-links{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.side-nav a{
+    padding: 0.7rem 0rem;
+    display: block;
+    color: var(--vd-gray);
+    font-weight: 700;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+side-nav .closebtn{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.container{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.container img{
+    width: 100%;
+}
+
+.banner-article{
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+}
+
+.article-container{
+    max-width: 800px;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: normal;
+    max-width: 355px;
+}
+
+.article-preview {
+    position: relative;
+    max-width: 355px;
+    
+}
+
+.articlefeed-left {
+    max-width: 400px;
+   background-color: var(--vd-gray);
+   padding: 1.5rem;
+}
+
+.articlefeed-left h2{
+    color: var(--s-orange) ;
+    font-size: 2.5rem;
+}
+
+.articlefeed-left h3{
+    color: var(--off-white);
+}
+
+.article-new-preview:nth-child(3) {
+    border-top: 1px solid hsl(236, 13%, 42%);;
+    border-bottom: 1px solid hsl(236, 13%, 42%);;
+}
+
+.article-new-preview{
+    padding: 2rem 0rem;
+}
+
+.article-new-preview p{
+    color: var(--g-blue);
+}
+
+
+button{
+    padding: 1rem 2.5rem;
+    background-color: var(--s-red);
+    border: none;
+    color: var(--off-white);
+    font-weight: 800;
+    letter-spacing: 4px;
+    position: absolute;
+    bottom: 0;
+}
+
+.articlefeed-bottom{
+    display: flex;
+    gap: 1rem;
+}
+
+.article-preview-bottom{
+    display: flex;
+    gap: 1.4rem;
+}
+
+.card-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.active{
+    display:block
+}
+
+.article-previewinfo-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.number{
+    font-size: 2rem;
+    color: var(--g-blue);
+    font-weight: 700;
+}
+
+.article-previewinfo-bottom p{
+    color: var(--dg-blue);
+}
+
+
+button:hover{
+    background-color: var(--vd-gray);
+}
+
+.article-new-preview h3:hover{
+    color: var(--s-orange);
+}
+
+.article-previewinfo-bottom h3:hover{
+    color: var(--s-red);
+}
+
+.navigation-links a:hover{
+    color: var(--s-red);
+}
+
+.mobile-img{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 991px ) {
+
+    .container, .banner-article, .articlefeed-bottom{
+        flex-direction: column;
+    }
+
+    .article-container, .articlefeed-left, .article-preview, .banner-article, h1{
+        max-width: 100%;
+    }
+
+   
+    h1{
+        font-size: 2.5rem;
+    }
+
+    button{
+        position: static;
+    }
+
+    .article-previewinfo-bottom{
+        justify-content: space-around;
+    }
+
+    .article-preview p{
+        margin: 2rem 0rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar{
+        margin: 1rem auto 1rem;
+    }
+
+    .menubtn{
+        display: flex;
+    }
+
+    .navigation-links{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px ) {
+
+    .desktop-img{
+        display: none;
+    }
+
+    .mobile-img{
+        display: block;
+    }
+    
+    .flavor-text p, h3{
+        font-size: 0.9rem;
+    }
+
+}

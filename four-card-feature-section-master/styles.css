@@ -1,0 +1,139 @@
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --vd-blue: hsl(234, 12%, 34%);
+    --g-blue: hsl(229, 6%, 66%);
+    --vl-blue:hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    max-width:1200px
+}
+
+
+.top-section{
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.top-section h2{
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--vd-blue);
+}
+
+.top-section p{
+    color: var(--g-blue);
+    margin: 1rem auto 4rem;
+}
+
+
+.card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.middle-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+    gap: 2rem;
+}
+
+.left-column, .right-column, .middle-column { 
+    padding: 2rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    flex-basis: 30%;
+    border-radius: 6px;
+}
+
+.column-text{
+    margin: 0.5rem 0 2rem;
+    color:var(--g-blue);
+    font-size: 14px;
+}
+
+
+.right-column {
+    border-top: 5px solid;
+    border-color: var(--blue);
+}
+
+.left-column {
+    border-top: 5px solid;
+    border-color: var(--cyan);
+}
+
+.middle-column:nth-child(2) {
+    border-top: 5px solid;
+    border-color: var(--orange);
+}
+
+.middle-column:nth-child(1) {
+    border-top: 5px solid;
+    border-color: var(--red);
+}
+
+.img-icon{
+    display: flex;
+    justify-content: end;
+}
+
+
+@media screen and (max-width: 600px ) {
+    
+    body{
+        height: auto;
+    }
+
+    .wrapper{
+        margin: 2rem auto 2rem;
+    }
+
+    .wrapper, .top-section{
+        max-width: 90%;
+    }
+
+    .top-section h1, .top-section h2{
+        font-size: 1.5rem;
+    }
+
+    .card-section{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .middle-section{
+        align-items: stretch;
+    }
+
+
+
+
+}

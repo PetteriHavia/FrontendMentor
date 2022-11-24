@@ -1,0 +1,181 @@
+
+:root{
+    --dd-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --text-dblue: hsl(237, 12%, 33%);
+    --text-gblue: hsl(240, 6%, 50%);
+    --divider-blue: hsl(240, 5%, 91%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    font-family: 'Kumbh Sans';
+    font-size: 14px;
+}   
+
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section{
+    display: flex;
+    width:900px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5rem 0rem;
+    overflow:hidden;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -36rem -19rem;
+    max-height: 500px;
+}
+
+.img-cube{
+    position: absolute;
+    transform: translate(-65%, -40%);
+    animation: unset;
+    animation-duration: 3s;
+    animation-name: box-desktop;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes box-desktop {
+    0% {
+        top: 50%;
+    }
+
+    100%{
+        top: 55%;
+    }
+}
+
+
+
+.left-section{
+    display: flex;
+    align-items: center;
+    width:50%;
+}
+
+.right-section{
+    width:50%;
+}
+
+.img-desktop{
+    margin-left: -5rem;
+}
+
+.right-section h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.accordio{
+    max-width: 22rem;
+    border-bottom: 1px solid;
+    color: var(--text-gblue);
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 0rem;
+    font-size: 11px;
+}
+
+.accordio-panel{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+}
+.accordio.active img{
+    transform: rotateZ(180deg);
+}
+
+
+.accordio h3:hover{
+    color: var(--soft-red);
+}
+
+.accordio.active h3{
+    color: var(--dd-blue);
+}
+
+.accordio.active .accordio-panel{
+    max-height:45px;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .card-section{
+        flex-direction: column;
+        max-width: 320px;
+        background-position: 2rem -9rem;
+        background-size: 80%;
+    }
+
+    .left-section{
+        min-width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .right-section{
+        min-width: 100%;
+        padding: 0rem 1.5rem;
+    }
+
+    .right-section h1{
+        text-align: center;
+    }
+
+    .img-desktop{
+        position: absolute;
+        transform: translate(42%, -50%);
+        max-width: 260px;
+    }
+
+    .img-cube{
+        position: absolute;
+        transform: translate(25%, 50%);
+        animation: unset;
+        z-index: 1;
+        max-width: 100px;
+        animation: unset;
+        animation-duration: 3s;
+        animation-name: box-mobile;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes box-mobile {
+        0% {
+            top: 90px;
+        }
+    
+        100%{
+            top: 100px;
+        }
+    }
+
+
+}

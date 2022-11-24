@@ -1,0 +1,137 @@
+
+
+html, body {
+    height: 100%;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+  }
+
+  .flex-container{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row{
+    max-width:345px;
+    background-color: #1F2630;
+    border-radius: 25px;
+    padding: 1.5rem;
+  }
+
+  .info-text{
+    font-size: 15px;
+    font-weight:400;
+    line-height: 1.5;
+    color:hsl(217, 12%, 63%);
+  }
+
+  .icon-background{
+    background: #26303C;
+    padding:10px;
+    border-radius: 50%;
+  }
+
+  .submit-style{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .submit-style:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+  }
+
+  .rating-list{
+    gap: 15px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rating:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+  }
+
+  .rating {
+    border-radius: 50%;
+    background: #262F38;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  /*AFTER SUBMIT*/
+
+  .flex-thankyou-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .checked {
+    background-color: hsl(25, 97%, 53%);
+  }
+
+  .row-thankyou{
+    max-width:345px;
+    text-align: center;
+    background-color: #1F2630;
+    border-radius: 25px;
+    padding: 1.5rem;
+  }
+
+  .icon-thankyou{
+      margin-top:20px;
+      align-items: center;
+
+    }
+
+  .info-thankyou-text{
+    font-size: 15px;
+    font-weight:400;
+    line-height: 1.5;
+    color:hsl(217, 12%, 63%);
+  }
+  
+  .rating-box{
+    width:60%;
+    background-color: #26303C;
+    margin: 20px auto 35px;
+    border-radius: 20px;
+    color:hsl(25, 97%, 53%);
+    padding: 5px;
+  }
+
+  @media only screen and ( max-width: 600px) {
+
+  .row{
+    width:80%;
+  }
+
+  .row-thankyou{
+    width:80%;
+  }
+
+  }

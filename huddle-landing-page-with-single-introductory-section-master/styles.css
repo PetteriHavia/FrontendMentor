@@ -1,0 +1,114 @@
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --s-magenda: hsl(300, 69%, 71%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: var(--violet);
+    line-height: 1.5;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 2rem;
+}
+
+.top-section img{
+    max-width: 20%;
+    margin-bottom: 5rem;
+}
+
+.mid-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container{
+    flex: 0 0 55%;
+}
+
+.text-container{
+    flex: 0 0 40%;
+    padding-top: 2.5rem;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.flavor-text{
+    margin: 2rem 0 1.5rem;
+    color: white;
+}
+
+.register-btn{
+    padding: 1rem 4rem 1rem;
+    background-color: white;
+    color: var(--violet);
+    border-style: none;
+    border-radius: 30px;
+    font-size: 18px;
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register-btn:hover{
+    background-color: var(--s-magenda);
+    color: white;
+}
+
+.icon-list{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+
+}
+
+/*FA ICON STUFF*/
+.fa-stack .fa,
+.fa-brands,
+.fa.fa-circle-thin{
+    color: white;
+} 
+
+.fa-stack  .fa.fa-circle {
+    color:transparent; 
+}
+
+.fa-stack:hover .fa-brands.fa-instagram,
+.fa-stack:hover .fa-brands.fa-facebook-f,
+.fa-stack:hover .fa-brands.fa-twitter,
+.fa-stack:hover .fa.fa-circle-thin {
+     color: var(--s-magenda);
+}
+
+
+
+
+
+
+
+
+

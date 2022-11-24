@@ -1,0 +1,81 @@
+:root{
+    --a-white: hsl(0, 0%, 98%);
+    --m-gray: hsl(0, 0%, 41%);
+    --a-black: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.navbar{
+    display: flex;
+}
+
+.wrapper{
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 5rem 2rem;
+}
+
+h1{
+    font-size: 5rem;
+    
+}
+
+.add-text{
+    padding-right: 4rem;
+    margin: 3rem 0rem 3rem;
+    line-height: 1.5;
+    color: var(--m-gray);
+}
+
+
+.left-section{
+    max-width: 50%;
+    margin: 6rem 0rem 0rem;
+    padding-left: 4rem;
+    align-self: flex-end;
+}
+
+.right-section{
+    max-width: 40%;
+}
+
+.right-section img{
+    width: 100%;
+}
+
+.learn-btn{
+    padding: 1rem 1.5rem;
+    background-color: var(--a-black);
+    color: var(--a-white);
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 6rem
+}
+
+.company-logos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.company-logos img{
+    align-self: center;
+}
+

@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem;
 
   .test {
     max-width: 480px;
@@ -63,4 +64,32 @@
 
 .content-wrapper {
   max-width: 480px;
+}
+
+.grid-image {
+  position: relative;
+}
+
+.grid-image-text {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 380px;
+  height: 250px;
+
+  h3 {
+    padding-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-family: $fraunces;
+    color: $d-d-cyan;
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-family: $barlow;
+    line-height: 1.5;
+    color: $d-d-cyan;
+  }
 }

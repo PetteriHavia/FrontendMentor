@@ -1,0 +1,19 @@
+.hero-section-container {
+  background-image: url(../assets/images//desktop/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-header {
+  text-align: center;
+  h1 {
+    font-size: 80px;
+    font-family: $fraunces;
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+    color: $white;
+    padding: 6.5rem 0rem;
+  }
+}

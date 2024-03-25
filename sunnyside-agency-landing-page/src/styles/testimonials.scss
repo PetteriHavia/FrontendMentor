@@ -1,0 +1,51 @@
+.testimonials-section {
+  padding: 10em 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  h3 {
+    text-align: center;
+    font-family: $fraunces;
+    color: $g-blue;
+    letter-spacing: 5px;
+  }
+}
+
+.testimonial {
+  display: flex;
+  gap: 4rem;
+
+  .client {
+    max-width: 350px;
+    text-align: center;
+
+    > p {
+      font-family: $barlow;
+      color: $v-d-g-blue;
+      font-size: 1.1rem;
+      padding: 4rem 0rem;
+    }
+
+    img {
+      width: 80px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.client-name {
+  p {
+    font-family: $fraunces;
+    color: $v-d-d-blue;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  small {
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: $barlow;
+    color: $g-blue;
+  }
+}

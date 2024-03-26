@@ -1,0 +1,34 @@
+@import "navigation";
+.footer {
+  background-color: $cyan;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0rem;
+
+  img {
+    filter: brightness(0) saturate(100%) invert(34%) sepia(45%) saturate(499%)
+      hue-rotate(116deg) brightness(102%) contrast(88%);
+    max-width: 180px;
+    width: 100%;
+  }
+
+  .link-container {
+    padding: 3rem 0rem 5rem;
+
+    ul {
+      gap: 4rem;
+    }
+
+    li {
+      color: #458c7e;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}

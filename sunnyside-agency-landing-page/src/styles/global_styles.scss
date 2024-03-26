@@ -7,6 +7,7 @@ $v-d-d-blue: hsl(212, 27%, 19%);
 $v-d-g-blue: hsl(213, 9%, 39%);
 $d-g-blue: hsl(232, 10%, 55%);
 $g-blue: hsl(210, 4%, 67%);
+$cyan: #91d4c6;
 $white: hsl(0, 0%, 100%);
 $barlow: "Barlow", sans-serif;
 $fraunces: "Fraunces", sans-serif;
@@ -24,6 +25,7 @@ $fraunces: "Fraunces", sans-serif;
 @import "services";
 @import "testimonials";
 @import "gallery";
+@import "footer";
 
 * {
   margin: 0;
@@ -33,4 +35,23 @@ $fraunces: "Fraunces", sans-serif;
 
 li {
   font-size: 18px;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+
+  ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-family: $barlow;
+    gap: 3.5rem;
+  }
+
+  li {
+    color: $white;
+    font-weight: 600;
+  }
 }

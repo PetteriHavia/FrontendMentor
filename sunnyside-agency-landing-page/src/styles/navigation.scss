@@ -4,18 +4,6 @@
   align-items: center;
   justify-content: space-between;
 
-  ul {
-    display: flex;
-    align-items: center;
-    gap: 3.5rem;
-    list-style-type: none;
-    font-family: $barlow;
-
-    li {
-      color: $white;
-      font-weight: 600;
-    }
-  }
   button {
     @include buttonStyle;
     font-family: $fraunces;

@@ -30,7 +30,6 @@ const Work = () => {
   }
   const containerWidth = 100 / 3;
 
-  window
   return (
     <section className="work">
       <h2>My Work</h2>

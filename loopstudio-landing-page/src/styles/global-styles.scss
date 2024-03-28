@@ -8,6 +8,7 @@ $josefin: "Josefin Sans", sans-serif;
 
 @import "hero";
 @import "intro";
+@import "gallery";
 
 * {
   margin: 0;
@@ -17,9 +18,6 @@ $josefin: "Josefin Sans", sans-serif;
 
 body {
   font-family: $alata;
-}
-
-.layout {
 }
 
 .container {

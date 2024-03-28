@@ -1,8 +1,15 @@
+import Navigation from "./Navigation"
+
 const Hero = () => {
   return (
-    <section>
-
-    </section>
+    <header className="hero">
+      <div className="container">
+        <Navigation />
+        <div className="hero-heading">
+          <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+        </div>
+      </div>
+    </header>
   )
 }
 

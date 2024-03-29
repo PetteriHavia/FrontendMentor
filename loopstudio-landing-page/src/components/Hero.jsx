@@ -1,10 +1,11 @@
 import Navigation from "./Navigation"
 
 const Hero = () => {
+
   return (
     <header className="hero">
       <div className="container">
-        <Navigation />
+        <Navigation menu={"main-menu"} />
         <div className="hero-heading">
           <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
         </div>

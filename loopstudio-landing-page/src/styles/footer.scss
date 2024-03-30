@@ -50,3 +50,29 @@
     color: $white;
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    .container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .nav-reusable {
+      align-items: center;
+    }
+  }
+
+  .media {
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    .nav-reusable ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}

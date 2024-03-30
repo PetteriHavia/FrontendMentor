@@ -47,10 +47,8 @@ const Gallery = () => {
   return (
     <section className="gallery">
       <div className="container">
-        <div className="gallery-heading">
-          <h2>OUR CREATIONS</h2>
-          <button>SEE ALL</button>
-        </div>
+        <h2>OUR CREATIONS</h2>
+        <button>SEE ALL</button>
         <div className="gallery-grid">
           {galleryImages.map((image, index) => (
             <div className="gallery-item" key={index}>

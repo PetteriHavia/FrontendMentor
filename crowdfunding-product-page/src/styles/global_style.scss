@@ -1,0 +1,24 @@
+$m-cyan: hsl(176, 50%, 47%);
+$d-cyan: hsl(176, 72%, 28%);
+$black: hsl(0, 0%, 0%);
+$d-gray: hsl(0, 0%, 48%);
+$comissioner: "Commissioner", sans-serif;
+$white: #fff;
+$black: #000;
+@import "hero";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: $comissioner;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}

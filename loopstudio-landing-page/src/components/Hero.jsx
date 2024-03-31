@@ -6,9 +6,9 @@ const Hero = () => {
     <header className="hero">
       <div className="container">
         <Navigation menu={"main-menu"} />
-        <div className="hero-heading">
-          <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
-        </div>
+      </div>
+      <div className="hero-heading container">
+        <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
       </div>
     </header>
   )

@@ -1,9 +1,15 @@
 import Hero from "./components/Hero"
+import Form from "./components/Form"
+import AppContextProvider from "./context/app-context"
+
 function App() {
   return (
-    <div className="layout">
-      <Hero />
-    </div>
+    <AppContextProvider>
+      <div className="layout">
+        <Hero />
+        <Form />
+      </div>
+    </AppContextProvider>
   )
 }
 

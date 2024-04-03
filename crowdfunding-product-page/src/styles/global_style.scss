@@ -2,10 +2,40 @@ $m-cyan: hsl(176, 50%, 47%);
 $d-cyan: hsl(176, 72%, 28%);
 $black: hsl(0, 0%, 0%);
 $d-gray: hsl(0, 0%, 48%);
+$l-gray: hsl(0, 0%, 77%, 0.3);
 $comissioner: "Commissioner", sans-serif;
 $white: #fff;
 $black: #000;
+$bg-body: #fafafa;
+
+@mixin primary-button {
+  padding: 1.2rem 2.5rem;
+  background-color: $m-cyan;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: $white;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $d-cyan;
+  }
+}
+
+@mixin product-primary {
+  border: 2px solid $l-gray;
+  border-radius: 8px;
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
 @import "hero";
+@import "form";
+@import "funding-status";
+@import "products";
+@import "modal-styles";
 
 * {
   margin: 0;
@@ -16,9 +46,39 @@ $black: #000;
 body {
   font-size: 16px;
   font-family: $comissioner;
+  background-color: $bg-body;
+  padding-bottom: 5rem;
+}
+
+.layout {
+  position: relative;
+}
+
+p {
+  font-size: 1.1rem;
+  color: $d-gray;
+  line-height: 1.8;
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
+}
+
+.container-md {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: $white;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 3rem;
+}
+
+.out-of-stock {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.selected-product {
+  border-color: $d-cyan;
 }

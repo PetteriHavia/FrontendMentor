@@ -1,0 +1,52 @@
+.product-section {
+  .container-md {
+    display: grid;
+    gap: 2.5rem;
+
+    > h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+
+  .product {
+    @include product-primary;
+
+    .flex-header,
+    .products-left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .flex-header > p,
+    strong {
+      color: $m-cyan;
+      font-weight: 600;
+    }
+
+    .products-left {
+      h3 {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      span {
+        font-size: 1rem;
+        color: $d-gray;
+        font-weight: 400;
+      }
+
+      button {
+        @include primary-button;
+      }
+    }
+  }
+}

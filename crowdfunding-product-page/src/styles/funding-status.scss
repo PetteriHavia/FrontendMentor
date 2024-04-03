@@ -1,0 +1,51 @@
+.funding-container {
+  padding: 2rem 0rem;
+  .container-md {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    progress {
+      width: 100%;
+      height: 1rem;
+      background-color: transparent;
+
+      &::-webkit-progress-value {
+        background-color: $m-cyan;
+        border-radius: 20px;
+      }
+
+      &::-webkit-progress-bar {
+        background-color: $l-gray;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+.status {
+  display: flex;
+
+  .status-item {
+    flex-basis: 33%;
+
+    &:nth-child(2) {
+      padding-left: 3rem;
+      border-left: 3px solid $l-gray;
+      border-right: 3px solid $l-gray;
+    }
+
+    &:nth-child(3) {
+      padding-left: 3rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: $d-gray;
+      font-size: 1.1rem;
+    }
+  }
+}

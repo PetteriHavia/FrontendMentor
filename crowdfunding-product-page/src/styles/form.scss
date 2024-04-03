@@ -1,0 +1,55 @@
+.form-container {
+  margin-top: -6rem;
+}
+
+.form-select {
+  text-align: center;
+  position: relative;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  > img {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.form-header {
+  padding: 1rem 0rem 2.5rem 0rem;
+
+  p {
+    padding-top: 1.5rem;
+    font-size: 1.1rem;
+    color: $d-gray;
+  }
+}
+
+.form-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bookmark {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: $l-gray;
+  border-radius: 30px;
+
+  h3 {
+    padding-right: 2rem;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.form-action-bar > button {
+  @include primary-button;
+}

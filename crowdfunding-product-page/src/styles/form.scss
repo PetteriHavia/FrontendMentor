@@ -41,6 +41,12 @@
   background-color: $l-gray;
   border-radius: 30px;
 
+  &.active {
+    h3 {
+      color: $d-cyan;
+    }
+  }
+
   h3 {
     padding-right: 2rem;
   }
@@ -52,4 +58,12 @@
 
 .form-action-bar > button {
   @include primary-button;
+}
+
+@media (max-width: 600px) {
+  .bookmark {
+    h3 {
+      display: none;
+    }
+  }
 }

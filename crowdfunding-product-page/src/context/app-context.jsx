@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import { createContext } from "react";
 import { useState } from "react";
 
 export const AppContext = createContext(null)
@@ -25,10 +25,13 @@ const AppContextProvider = ({ children }) => {
     },
   ]
   const [bookmark, setBookmark] = useState(false)
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState({ modalA: false, modalB: false })
   const [products, setProducts] = useState(initialProducts)
   const [check, setCheck] = useState(false)
   const [pledgeAmount, setPledgeAmount] = useState(0)
+  const [totalMoney, setTotalMoney] = useState(89914)
+  const [totalBackers, setTotalBackers] = useState(5007)
+
 
   return (
     <AppContext.Provider
@@ -42,7 +45,11 @@ const AppContextProvider = ({ children }) => {
         check,
         setCheck,
         pledgeAmount,
-        setPledgeAmount
+        setPledgeAmount,
+        totalMoney,
+        setTotalMoney,
+        totalBackers,
+        setTotalBackers
       }}>
       {children}
     </AppContext.Provider>

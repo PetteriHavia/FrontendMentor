@@ -1,5 +1,7 @@
+/*------Modal.jsx------*/
 .modal {
-  > .container-md {
+  > .container-md,
+  .container-sm {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -12,6 +14,7 @@
     @include product-primary;
     display: flex;
     align-items: baseline;
+    cursor: revert;
   }
 
   .selected-product {
@@ -80,11 +83,10 @@ img {
 }
 
 .inputBox {
-  max-width: 120px;
   width: 100%;
   border: 2px solid $l-gray;
   border-radius: 30px;
-  padding: 1.2rem 1rem;
+  padding: 1rem 1rem;
   display: flex;
   align-items: baseline;
 
@@ -98,5 +100,31 @@ img {
     font-weight: 600;
     outline: none;
     font-size: 1.1rem;
+  }
+}
+
+/*------ThankYouModal.jsx------*/
+
+.modal > .container-sm {
+  padding: 3rem;
+  text-align: center;
+  background-color: $white;
+  z-index: 500;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  img {
+    padding-bottom: 2rem;
+    width: 100px;
+  }
+
+  p {
+    padding: 2rem 0rem;
+  }
+
+  button {
+    @include primary-button;
   }
 }

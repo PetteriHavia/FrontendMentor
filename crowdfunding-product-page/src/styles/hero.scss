@@ -3,23 +3,73 @@ header {
   width: 100%;
   background: url(../assets/images/image-hero-desktop.jpg) no-repeat bottom;
   background-size: cover;
+}
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 3rem;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 1.5rem;
+  position: relative;
+
+  .mobile-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    right: 1.5rem;
   }
 
-  nav ul {
+  ul {
     display: flex;
     gap: 3rem;
     list-style: none;
+  }
 
-    li a {
-      color: $white;
-      text-decoration: none;
-      font-weight: 500;
+  li a {
+    color: $white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 600px) {
+  .open {
+    display: block;
+  }
+
+  nav {
+    ul {
+      display: none;
+      position: absolute;
+      bottom: -220px;
+      left: 1.5rem;
+      right: 1.5rem;
+      background-color: $white;
+      border-radius: 8px;
+
+      li {
+        padding: 1.5rem 1rem;
+      }
+
+      li:nth-child(2) {
+        border: 2px solid $l-gray;
+      }
+
+      a {
+        color: black;
+        font-size: 1.5rem;
+      }
+    }
+    .mobile-icon {
+      display: block;
+    }
+  }
+
+  nav {
+    .mobile-icon,
+    .mobile-menu {
+      display: block;
     }
   }
 }

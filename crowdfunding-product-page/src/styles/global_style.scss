@@ -74,7 +74,22 @@ p {
   padding: 3rem;
 }
 
+.container-sm {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: $white;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 3rem;
+}
+
 .out-of-stock {
   opacity: 0.5;
   pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .container-md {
+    padding: 1.5rem;
+  }
 }
